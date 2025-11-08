@@ -1,0 +1,20 @@
+printf "\n";
+printf "\tFibonacci Series in Bash"
+printf "\n\n"
+
+echo -n "Kasih aku angkanya : "
+read N
+a=0
+b=1
+
+printf "\n"
+echo "Deret Fibonacci hingga angka adalah :"
+
+# Loop untuk mencetak deret Fibonacci
+for (( i=0; i<N; i++ ))
+do
+    echo "$a"
+    fn=$((a + b))
+    a=$b
+    b=$fn
+done
